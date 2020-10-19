@@ -3,8 +3,23 @@ import React, { Component } from 'react';
 
 const Ninjas = ({ ninjas }) => {
   //const { ninjas } = props;
+  /* const ninjaList = ninjas.map(ninja => {
+    if (ninja.age > 20) {
+      return (
+        <div className="ninja" key={ninja.id}>
+          <div>Name: {ninja.name}</div>
+          <div>Age: {ninja.age}</div>
+          <div>belt: {ninja.belt}</div>
+          <br />
+
+        </div>
+      )
+    } else {
+      return null
+    }
+  }) */
   const ninjaList = ninjas.map(ninja => {
-    return (
+    return ninja.age > 20 ? (
       <div className="ninja" key={ninja.id}>
         <div>Name: {ninja.name}</div>
         <div>Age: {ninja.age}</div>
@@ -12,7 +27,7 @@ const Ninjas = ({ ninjas }) => {
         <br />
 
       </div>
-    )
+    ) : null;
   })
   return (
     <div className="ninja-list">

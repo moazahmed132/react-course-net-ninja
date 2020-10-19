@@ -5,7 +5,7 @@ class App extends Component {
   state = {
     ninjas: [
       { name: 'moaz', age: '16', belt: 'black', id: 1 },
-      { name: 'ahmed', age: '19', belt: 'green', id: 2 },
+      { name: 'ahmed', age: '22', belt: 'green', id: 2 },
       { name: 'mohamed', age: '65', belt: 'red', id: 3 }
     ]
   }
